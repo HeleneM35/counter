@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 function Counter() {
 
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState();
 
-  const handleChange = event => setCount(event.target.value)
+  const handleChange = event => setCount(Number(event.target.value))
 
   return (
     <div>
